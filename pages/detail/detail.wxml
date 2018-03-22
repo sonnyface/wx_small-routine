@@ -1,0 +1,45 @@
+<!--detail.wxml-->
+<view >
+<view class="detail" wx:for="{{array}}" wx:key > 
+    <!--顶部大图  -->
+    <view class="banner">
+      <image class="banner3" src="{{item.image}}"></image>
+    </view>
+    <!--居民搬家  -->
+    <view class="juminbanjia">
+      <text class="title">{{item.cate_name}}</text>     
+      <text class="item-val">¥{{item.price}}.00元</text>
+      <text class="item-drop">门市价：¥{{item.original_price}}.00元</text>
+    </view>
+    <!--商家信息  -->
+    <view class="shangjiaxinxi">
+        <view class="shangjia-title">
+          <text class="xinxi">商家信息</text>
+        </view>
+        <view class="content" >
+            <view class="shopLeft" >
+              <text class="fujin">{{item.name}}</text>
+              <text class="fujinAdd" >{{item.address}}</text>
+                 <view class="iconIns">
+                  <image class="iconImg" src="../../image/phone1.png"></image>
+                  <text class="iconAdd">{{item.phone}}</text>    
+               </view>                        
+          </view>
+          <view class="shopRignt" bindtap="makePhoneCall" data-id="{{item.phone}}">
+            <image class="phone" src="../../image/phone.png"></image>
+          </view>
+        </view>      
+    </view>
+    <view class="fuwuxiangqing">
+        <view class="shangjia-title">
+          <text class="xinxi">服务详情</text>
+        </view>
+        <view class="text-font">
+          <text class="del-text" space="nbsp">{{item.desc}}</text>
+        </view>        
+    </view>
+    <view class="bottom">   
+       <button formType="submit" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"  disabled="{{disabled}}" bindtap="primary" data-text="{{item.cate_name}}"> 马上预约 </button> 
+    </view>
+</view>
+</view>

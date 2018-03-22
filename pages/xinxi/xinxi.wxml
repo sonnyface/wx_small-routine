@@ -1,0 +1,33 @@
+<!--xinxi.wxml-->
+<view class="xinxi">
+<!--请填写你的预约信息  -->
+   <view class="header">
+    <image class="iconImg" src="../../image/icon01.png"></image>
+    <text  class="tianxiexinxi">请填写你的预约信息</text>
+  </view> 
+  <!--个人信息  -->
+  <form  bindsubmit="formSubmit">
+    <view class="content">
+      <view class="txt">        
+        <view class="txt2">姓名：</view>
+        <input  maxlength="10" class="txt3" value="{{mem_name}}"  name="userName"/>
+      </view> 
+      <view class="txt">        
+        <view class="txt2">手机号：</view>
+        <input type="idcard" class="txt3"   value="{{mem_IDnum}}"  maxlength="11" name="phoneNum"/>
+      </view>
+      <view class="txt">        
+        <view class="txt2">所需服务：</view>
+        <input   class="txt3" value="{{mem_name}}" name="needing"/>
+      </view>
+      <view class="txt">        
+        <view class="txt2">地址：</view>
+        <input class="txt3" value="{{mem_name}}" name="addName"/>
+      </view>    
+    </view>   
+    <button formType="submit"  class="complete" >马上预约</button>   
+  </form> 
+
+
+
+</view>

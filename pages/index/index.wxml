@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="container">
+  <!--大图01  -->
+  <view class="banner">
+    <swiper autoplay="true" circular="true" interval="4000" duration="1500">
+      <block>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img01.jpg" class="slide-image  banner_img" />
+        </swiper-item>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img02.jpg" class="slide-image  banner_img" />
+        </swiper-item>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img03.jpg" class="slide-image  banner_img" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="kongBox"></view>
+  <!--跳转各种搬家  -->
+  <view class="icon-list">
+    <view bindtap="todetail" data-text="{{plists.name}}" class="imgLis" wx:for="{{topList}}" wx:for-item="plists" wx:key="{{plists.id}}" id="{{plists.id}}">
+      <image class="smImg" src="{{plists.icon}}"></image>
+      <text class="fontImg">{{plists.name}}</text>
+    </view>
+  </view>
+  <view class="kongBox"></view>
+  <!--大图02  -->
+  <view class="banner2">
+    <swiper autoplay="true" circular="true" interval="5000" duration="2000">
+      <block>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img04.jpg" class="slide-image  bannImg" />
+        </swiper-item>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img05.jpg" class="slide-image bannImg" />
+        </swiper-item>
+        <swiper-item>
+          <image src="http://oxwr9o25z.bkt.clouddn.com/img06.jpg" class="slide-image  bannImg" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="kongBox"></view>
+  <view class="fujintuijian">
+    <text class="tuiJian">附近推荐</text>
+  </view>
+  <!--商品列表  -->
+  <view class="plist">
+    <view class="itemList" bindtap="toPagetwo" data-text="{{list.name}}"  wx:for="{{array1}}" wx:for-item="list" wx:key="iid"  id="{{list.id}}">
+      <image class="itemImg" src="{{list.image}}"></image>
+      <view class="itemfont">
+        <text class="item-title">{{list.name}}</text>
+        <text class="item-val">¥{{list.price}}</text>
+        <text class="item-drop">¥{{list.original_price}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

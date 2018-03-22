@@ -1,0 +1,106 @@
+/**index.wxss**/
+.banner{
+  width:100%;
+  height:300rpx;
+  overflow: hidden;  
+}
+.banner_img{
+  width:100%;
+  height:300rpx;
+}
+.kongBox{
+  width:100%;
+  height:20rpx;
+  background:#eee;
+}
+.icon-list{
+  width:100%;
+  height:360rpx; 
+  box-sizing:border-box;
+  padding:20rpx 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.imgLis{ 
+  display: flex;
+  flex-direction: column;
+  margin-bottom:24rpx;   
+  /* text-align: center;
+  justify-content: center; */
+  width:25%;
+}
+.smImg{
+  width:100rpx;
+  height:100rpx;
+   display: block;    
+   margin:0 20%; 
+}
+.fontImg{
+  font-size:26rpx;
+  color:#666;
+  text-align:center;
+  line-height:44rpx;
+}
+.banner2{
+  width:100%;
+  height:220rpx;
+  /* overflow: hidden;   */
+}
+.bannImg{
+  width:100%;
+  height:220rpx;
+}
+.fujintuijian{
+  width:100%;
+  box-sizing: border-box;
+  padding:0 20rpx;  
+  margin-bottom:12rpx;
+}
+.tuiJian{
+  display: block;
+  padding:15rpx 0 7rpx 0;
+  font-size: 24rpx;
+  color:#333;
+  border-bottom:1rpx solid #eee;
+}
+.plist{
+  width:100%;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.itemList{
+  width:30%;
+  height:290rpx;
+  margin-bottom:30rpx; 
+}
+.itemImg{
+  width:100%;
+  height:68%;  
+}
+.itemfont{
+  width:100%;
+  flex:0 0 10vw;
+}
+.item-title{
+  width:100%;
+  font-size:24rpx;
+  color:#333;
+  display:block;
+  /* line-height:72rpx; */
+}
+.item-val{
+   font-size:24rpx;
+  color:#ff4747;
+}
+.item-drop{
+   font-size:24rpx;
+  color:#888;
+  text-decoration: line-through;
+  padding-left:30%;
+}
+
+

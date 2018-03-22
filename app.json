@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/xinxi/xinxi",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4d6bc5",
+    "navigationBarTitleText": "郑州喷绘制作",
+    "navigationBarTextStyle": "#fff"
+  }
+}
